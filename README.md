@@ -4,6 +4,8 @@ Adds EssenceAudio, EssenceFlash and EssenceVideo essences to your Alchemy CMS po
 
 ## Installation
 
+**Make sure you have Alchemy CMS installed.**
+
 Add this line to your application's Gemfile:
 
     gem 'alchemy-richmedia-essences'
@@ -20,15 +22,15 @@ Or install it yourself as:
 
 1. After installing, prepare your database with:
 
-    $ rake alchemy_richmedia_essences:install:migrations db:migrate
+        $ rake alchemy_richmedia_essences:install:migrations db:migrate
 
 2. In your `elements.yml` add one of the shiny new essences to your element of choice.
 
-    # elements.yml
-    - name: video
-      contents:
-      - name: file
-        type: EssenceVideo
+        # elements.yml
+        - name: video
+          contents:
+          - name: file
+            type: EssenceVideo
 
 That's it!
 
