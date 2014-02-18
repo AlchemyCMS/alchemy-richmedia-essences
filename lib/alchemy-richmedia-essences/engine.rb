@@ -6,7 +6,7 @@ module Alchemy
         config.mount_at = '/'
 
         initializer "alchemy_richmedia_essences.add_authorization_rules" do
-          Alchemy::AuthEngine.get_instance.load(File.join(File.dirname(__FILE__), '../..', 'config/authorization_rules.rb'))
+          Alchemy::Auth::Engine.get_instance.load(File.join(File.dirname(__FILE__), '../..', 'config/authorization_rules.rb'))
         end
 
       end

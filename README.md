@@ -2,7 +2,9 @@
 
 Adds EssenceAudio, EssenceFlash and EssenceVideo essences to your Alchemy CMS powered site.
 
-This version is compatible with Alchemy version <= v2.6.0
+This version is compatible with Alchemy version 2.7 and above.
+
+For Alchemy v2.6.0 and below please use version 0.1.0.
 
 ## Installation
 

@@ -15,5 +15,5 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split($/)
   gem.require_paths = ["lib"]
 
-  gem.add_runtime_dependency 'alchemy_cms', ['>= 2.4.0', '< 2.7.0']
+  gem.add_runtime_dependency 'alchemy_cms', ['>= 2.7.0', '< 3.0.0']
 end
