@@ -1,3 +1,5 @@
+require "alchemy-richmedia-essences/ability"
+
 module Alchemy
   module Richmedia
     module Essences
