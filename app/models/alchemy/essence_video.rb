@@ -1,21 +1,8 @@
 module Alchemy
   class EssenceVideo < ActiveRecord::Base
-
-    attr_accessible(
-      :width,
-      :height,
-      :allow_fullscreen,
-      :auto_play,
-      :show_navigation,
-      :attachment_id
-    )
-
-    acts_as_essence(
-      :ingredient_column => :attachment,
-      :preview_text_method => :name
-    )
+    acts_as_essence ingredient_column: 'attachment',
+      preview_text_method: 'name'
 
     belongs_to :attachment
-
   end
 end

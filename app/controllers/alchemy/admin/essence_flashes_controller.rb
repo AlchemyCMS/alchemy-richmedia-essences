@@ -1,21 +1,25 @@
 module Alchemy
   class Admin::EssenceFlashesController < Alchemy::Admin::BaseController
-
+    authorize_resource class: Alchemy::EssenceFlash
     before_filter :load_essence
 
-    def edit
-      render :layout => false
-    end
-
     def update
-      @essence_flash.update_attributes(params[:essence_flash])
+      @essence_flash.update(essence_flash_params)
     end
 
-  private
+    private
 
     def load_essence
       @essence_flash = EssenceFlash.find(params[:id])
     end
 
+    def essence_flash_params
+      params.require(:essence_flash).permit(
+        :width,
+        :height,
+        :player_version,
+        :attachment_id
+      )
+    end
   end
 end

@@ -1,21 +1,6 @@
-<%= form_for([:admin, @essence_flash], :remote => true) do |f| %>
-  <table>
-    <tr>
-      <td class="label"><%= f.label "width" %></td>
-      <td class="input"><%= f.text_field "width", :class => 'thin_border' %></td>
-    </tr>
-    <tr>
-      <td class="label"><%= f.label "height" %></td>
-      <td class="input"><%= f.text_field "height", :class => 'thin_border' %></td>
-    </tr>
-    <tr>
-      <td class="label"><%= f.label "player_version" %></td>
-      <td class="input"><%= f.text_field "player_version", :class => 'thin_border' %></td>
-    </tr>
-    <tr>
-      <td colspan="2" class="submit">
-        <%= f.button t("save"), :class => 'button' %>
-      </td>
-    </tr>
-  </table>
+<%= alchemy_form_for [:admin, @essence_flash] do |f| %>
+  <%= f.input :width %>
+  <%= f.input :height %>
+  <%= f.input :player_version %>
+  <%= f.submit _t(:save) %>
 <% end %>
