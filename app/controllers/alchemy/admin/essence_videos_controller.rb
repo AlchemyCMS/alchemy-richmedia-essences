@@ -10,7 +10,7 @@ module Alchemy
     private
 
     def load_essence
-      @essence_video = EssenceVideo.find(params[:id])
+      @essence_video = Alchemy::Content.find(params[:id]).essence
     end
 
     def essence_video_params
