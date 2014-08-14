@@ -18,9 +18,10 @@ module Alchemy
       params.require(:essence_video).permit(
         :width,
         :height,
-        :allow_fullscreen,
-        :auto_play,
-        :show_navigation,
+        :autoplay,
+        :controls,
+        :loop,
+        :muted,
         :attachment_id
       )
     end
