@@ -1,6 +1,6 @@
 # Alchemy CMS Richmedia Essences
 
-Adds EssenceAudio, EssenceFlash and EssenceVideo essences to your Alchemy CMS powered site.
+Adds EssenceAudio and EssenceVideo essences to your Alchemy CMS powered site.
 
 This version is compatible with Alchemy version 3.0 and above only.
 

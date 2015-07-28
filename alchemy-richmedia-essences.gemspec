@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Alchemy::Richmedia::Essences::VERSION
   gem.authors       = ["Thomas von Deyen"]
   gem.email         = ["tvdeyen@gmail.com"]
-  gem.description   = %q{EssenceAudio, EssenceFlash and EssenceVideo for Alchemy CMS 3.0}
-  gem.summary       = %q{Adds EssenceAudio, EssenceFlash and EssenceVideo essences to your Alchemy CMS powered site.}
+  gem.description   = %q{EssenceAudio and EssenceVideo for Alchemy CMS 3.0}
+  gem.summary       = %q{Adds EssenceAudio and EssenceVideo essences to your Alchemy CMS powered site.}
   gem.homepage      = "http://alchemy-cms.com"
   gem.license       = 'BSD New'
 
