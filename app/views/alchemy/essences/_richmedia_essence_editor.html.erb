@@ -1,8 +1,9 @@
 <div class="content_editor essence_file" id="<%= content.dom_id %>">
-  <label style="display: inline">
-    <%= render_content_name(content) %>
-    <%= delete_content_link(content) %>
-  </label>
+  <% if respond_to?(:content_label) %>
+    <%= content_label(content) %>
+  <% else %>
+    <%= label_and_remove_link(content) %>
+  <% end %>
   <div class="file" id="file_<%= content.id %>">
     <div class="file_icon">
     <% if content.ingredient.nil? %>
@@ -51,7 +52,7 @@
           controller: controller,
           action: 'edit',
           options: options.to_json,
-          id: content
+          id: content.essence.id
         ),
         {
           title: _t(:edit_file_properties),

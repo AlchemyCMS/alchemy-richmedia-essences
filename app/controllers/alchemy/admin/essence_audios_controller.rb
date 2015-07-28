@@ -15,10 +15,10 @@ module Alchemy
 
     def essence_audio_params
       params.require(:essence_audio).permit(
-        :width,
-        :height,
-        :show_eq,
-        :show_navigation,
+        :autoplay,
+        :controls,
+        :loop,
+        :muted,
         :attachment_id
       )
     end

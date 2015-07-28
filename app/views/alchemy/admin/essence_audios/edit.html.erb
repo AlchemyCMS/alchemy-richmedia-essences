@@ -1,7 +1,7 @@
 <%= alchemy_form_for [:admin, @essence_audio] do |f| %>
-  <%= f.input :width %>
-  <%= f.input :height %>
-  <%= f.input :show_eq %>
-  <%= f.input :show_navigation %>
+  <%= f.input :autoplay %>
+  <%= f.input :controls %>
+  <%= f.input :loop %>
+  <%= f.input :muted %>
   <%= f.submit _t(:save) %>
 <% end %>
