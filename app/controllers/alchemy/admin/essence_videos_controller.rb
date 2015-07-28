@@ -1,17 +1,16 @@
 module Alchemy
   class Admin::EssenceVideosController < Alchemy::Admin::BaseController
     authorize_resource class: Alchemy::EssenceVideo
-    before_filter :load_essence, except: :update
+    before_filter :load_essence
 
     def update
-      @essence_video = Alchemy::EssenceVideo.find(params[:id])
       @essence_video.update(essence_video_params)
     end
 
     private
 
     def load_essence
-      @essence_video = Alchemy::Content.find(params[:id]).essence
+      @essence_video = EssenceVideo.find(params[:id])
     end
 
     def essence_video_params

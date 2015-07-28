@@ -1,9 +1,11 @@
 <%- unless content.essence.attachment.nil? -%>
-  <%= video_tag(alchemy.show_attachment_path(content.essence.attachment),
-                controls: content.essence.controls,
-                autoplay: content.essence.autoplay,
-                loop: content.essence.loop,
-                muted: content.essence.muted,
-                width: content.essence.width,
-                height: content.essence.height) %>
+  <%= video_tag(
+    alchemy.show_attachment_path(content.essence.attachment),
+    controls: content.essence.controls,
+    autoplay: content.essence.autoplay,
+    loop: content.essence.loop,
+    muted: content.essence.muted,
+    width: content.essence.width,
+    height: content.essence.height
+  ) %>
 <%- end -%>
