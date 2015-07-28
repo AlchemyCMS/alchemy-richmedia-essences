@@ -1,4 +1,4 @@
-class Html5VideoUpdate < ActiveRecord::Migration
+class AlchemyEssenceVideoHtml5Update < ActiveRecord::Migration
   def up
     change_table :alchemy_essence_videos do |t|
       t.change :width, :string
