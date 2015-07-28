@@ -1,9 +1,14 @@
-<%- unless content.essence.attachment.nil? -%>
-  <%= audio_tag(
-      alchemy.show_attachment_path(content.essence.attachment),
+<%- if content.ingredient -%>
+  <%= content_tag :audio,
       controls: content.essence.controls,
       autoplay: content.essence.autoplay,
       loop: content.essence.loop,
-      muted: content.essence.muted
-    ) %>
+      muted: content.essence.muted do %>
+    <%= content_tag :source, nil,
+      src: alchemy.show_attachment_path(
+        content.ingredient,
+        format: content.ingredient.suffix
+      ),
+      type: content.ingredient.file_mime_type %>
+  <% end %>
 <%- end -%>
