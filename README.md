@@ -1,8 +1,10 @@
-# Alchemy CMS Richmedia Essences
+# Alchemy CMS HTML5 Richmedia Essences
 
-Adds EssenceAudio and EssenceVideo essences to your Alchemy CMS powered site.
+Adds HTML5 EssenceAudio and EssenceVideo essences to your Alchemy CMS powered site.
 
-This version is compatible with Alchemy version 3.0 and above only.
+This version is compatible with Alchemy version 3.0 and above only and does not include any Flash® based player anymore. The output are simple HTML5 <video> and <audio> tags.
+
+Also this plugin does not contain a EssenceFlash any more. If you need EssenceFlash, you need to use version 0.3-stable.
 
 For Alchemy v2.7.0 please use version 0.2.0.
 
@@ -14,31 +16,38 @@ For Alchemy v2.6.0 and below please use version 0.1.0.
 
 Add this line to your application's Gemfile:
 
-    gem 'alchemy-richmedia-essences'
+    gem 'alchemy-richmedia-essences', github: 'AlchemyCMS/alchemy-richmedia-essences'
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install alchemy-richmedia-essences
+    $ bundle install
 
 ## Usage
 
-1. After installing, prepare your database with:
+1. After installing or updating, prepare your database with:
 
         $ rake alchemy_richmedia_essences:install:migrations db:migrate
 
-2. In your `elements.yml` add one of the shiny new essences to your element of choice.
+2. In your `elements.yml` add one of these essences to your element of choice.
 
         # elements.yml
         - name: video
           contents:
-          - name: file
+          - name: video
             type: EssenceVideo
 
-That's it!
+        - name: audio
+          contents:
+          - name: audio
+            type: EssenceAudio
+
+3. Player customization
+
+This plugin just provides HTML5 <video> and <audio> tags and no styling at all. The players will appear as the browser vendors provide.
+
+If you want a cross browser and customizable player with Flash® fallback, then we strongly recommend something like http://mediaelementjs.com/
+
+There is even a gem https://github.com/tobsch/mediaelement_rails that provides everthing for the Rails' asset pipeline.
 
 ## Contributing
 
