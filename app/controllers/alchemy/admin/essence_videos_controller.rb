@@ -21,6 +21,7 @@ module Alchemy
         :controls,
         :loop,
         :muted,
+        :preload,
         :attachment_id
       )
     end

@@ -4,6 +4,7 @@
     autoplay: content.essence.autoplay,
     loop: content.essence.loop,
     muted: content.essence.muted,
+    preload: content.essence.preload.presence || nil,
     width: content.essence.width,
     height: content.essence.height do %>
     <%= content_tag :source, nil,
