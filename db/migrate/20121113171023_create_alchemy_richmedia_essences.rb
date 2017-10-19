@@ -1,4 +1,4 @@
-class CreateAlchemyRichmediaEssences < ActiveRecord::Migration
+class CreateAlchemyRichmediaEssences < ActiveRecord::Migration[4.2]
   def change
     return if table_exists?(:alchemy_essence_audios)
 
