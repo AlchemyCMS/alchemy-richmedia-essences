@@ -5,6 +5,7 @@
   <%= f.input :controls %>
   <%= f.input :loop %>
   <%= f.input :muted %>
-  <%= f.input :preload, collection: %w(none metadata auto), include_blank: true %>
+  <%= f.input :preload, collection: %w(auto none metadata),
+    include_blank: false, input_html: {class: 'alchemy_selectbox'} %>
   <%= f.submit Alchemy.t(:save) %>
 <% end %>
