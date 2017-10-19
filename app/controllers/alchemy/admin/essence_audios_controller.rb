@@ -1,7 +1,7 @@
 module Alchemy
   class Admin::EssenceAudiosController < Alchemy::Admin::BaseController
     authorize_resource class: Alchemy::EssenceAudio
-    before_filter :load_essence
+    before_action :load_essence
 
     def update
       @essence_audio.update(essence_audio_params)

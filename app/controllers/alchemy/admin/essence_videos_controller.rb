@@ -1,7 +1,7 @@
 module Alchemy
   class Admin::EssenceVideosController < Alchemy::Admin::BaseController
     authorize_resource class: Alchemy::EssenceVideo
-    before_filter :load_essence
+    before_action :load_essence
 
     def update
       @essence_video.update(essence_video_params)

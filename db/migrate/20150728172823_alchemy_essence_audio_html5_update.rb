@@ -1,4 +1,4 @@
-class AlchemyEssenceAudioHtml5Update < ActiveRecord::Migration
+class AlchemyEssenceAudioHtml5Update < ActiveRecord::Migration[4.2]
   def up
     change_table :alchemy_essence_audios do |t|
       t.boolean :autoplay, default: false
