@@ -1,19 +1,20 @@
-# Alchemy CMS HTML5 Richmedia Essences
+# AlchemyCMS HTML5 Richmedia Essences
 
-Adds HTML5 `EssenceAudio` and `EssenceVideo` essences to your Alchemy CMS powered site.
+Adds HTML5 `EssenceAudio` and `EssenceVideo` essences to your AlchemyCMS powered website.
 
 ## Alchemy version
 
-This version is compatible with Alchemy version 3.0 and above only.
+This version is compatible with Alchemy v4.0 and above only.
 
-Also this plugin does not contain a `EssenceFlash` any more. If you need `EssenceFlash`, you need to use version 0.3-stable.
-
+- For Alchemy v3.x please use version 1.0.0.
 - For Alchemy v2.7.0 please use version 0.2.0.
 - For Alchemy v2.6.0 and below please use version 0.1.0.
 
+Also this plugin does not contain a `EssenceFlash` any more. If you need `EssenceFlash`, you need to use version 0.3-stable.
+
 ## Installation
 
-**Make sure you have Alchemy CMS installed.**
+**Make sure you have AlchemyCMS installed.**
 
 Add this line to your application's Gemfile:
 
