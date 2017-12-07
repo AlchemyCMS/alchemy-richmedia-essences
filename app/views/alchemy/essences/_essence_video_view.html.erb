@@ -7,7 +7,7 @@
     preload: content.essence.preload.presence || nil,
     width: content.essence.width,
     height: content.essence.height do %>
-    <%= content_tag :source, nil,
+    <%= tag :source,
       src: alchemy.show_attachment_path(
         content.ingredient,
         format: content.ingredient.suffix
