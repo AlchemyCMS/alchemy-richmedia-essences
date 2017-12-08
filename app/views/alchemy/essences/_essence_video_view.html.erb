@@ -5,8 +5,8 @@
     loop: content.essence.loop,
     muted: content.essence.muted,
     preload: content.essence.preload.presence || nil,
-    width: content.essence.width,
-    height: content.essence.height do %>
+    width: content.essence.width.presence || nil,
+    height: content.essence.height.presence || nil do %>
     <%= tag :source,
       src: alchemy.show_attachment_path(
         content.ingredient,
