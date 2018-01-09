@@ -16,6 +16,20 @@
   }
 ) %>
 
+<% picture_dialog_link = link_to_dialog render_icon('swap_picture'),
+  alchemy.admin_pictures_path(
+    element_id: content.element,
+    content_id: content.id,
+    swap: true,
+    options: options
+  ),
+  {
+    title: (content.essence.picture ? Alchemy.t(:swap_image) : Alchemy.t(:insert_image)),
+    size: '780x580',
+    padding: false
+  },
+  title: (content.essence.picture ? Alchemy.t(:swap_image) : Alchemy.t(:insert_image)) %>
+
 <div class="content_editor essence_file" id="<%= content.dom_id %>" data-content-id="<%= content.id %>">
   <%= content_label(content) %>
   <div class="file" id="file_<%= content.id %>">
@@ -49,4 +63,25 @@
     <%= hidden_field_tag content.form_field_name(:attachment_id),
       content.ingredient && content.ingredient.id %>
   </div>
+  <%- if content.essence_type == "Alchemy::EssenceVideo" -%>
+    <label>Preview Image</label>
+    <div class="file" id="picture_file_<%= content.id %>">
+      <div class="file_icon">
+      <% if content.essence.picture %>
+        <%= render_icon('image') %>
+      <% else %>
+        <%= picture_dialog_link %>
+      <% end %>
+      </div>
+      <div class="file_name">
+        <%= content.essence.picture.try(:name) ||
+          ("&#x2190;" + Alchemy.t(:assign_file_from_archive)).html_safe %>
+      </div>
+      <div class="essence_file_tools">
+        <%= picture_dialog_link %>
+      </div>
+      <%= hidden_field_tag content.form_field_name(:picture_id),
+      content.essence.picture && content.essence.picture&.id %>
+    </div>
+  <%- end -%>
 </div>

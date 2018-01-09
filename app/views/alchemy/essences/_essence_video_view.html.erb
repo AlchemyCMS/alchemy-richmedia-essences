@@ -6,7 +6,8 @@
     muted: content.essence.muted,
     preload: content.essence.preload.presence,
     width: content.essence.width.presence,
-    height: content.essence.height.presence do %>
+    height: content.essence.height.presence,
+    poster: content.essence.picture&.url do %>
     <%= tag :source,
       src: alchemy.show_attachment_path(
         content.ingredient,
