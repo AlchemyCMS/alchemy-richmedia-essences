@@ -1,3 +1,7 @@
+## 2.2.0 (2020-01-07)
+
+- Do not rely on options variable in essence editor files [#17](https://github.com/AlchemyCMS/alchemy-richmedia-essences/pull/17) ([tvdeyen](https://github.com/tvdeyen))
+
 ## 2.1.0 (2019-11-11)
 
 - Update essence editor view [#16](https://github.com/AlchemyCMS/alchemy-richmedia-essences/pull/16) ([jrieger](https://github.com/jrieger))
