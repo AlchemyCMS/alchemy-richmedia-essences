@@ -1,6 +1,6 @@
 <%= render(
   'alchemy/essences/richmedia_essence_editor',
-  options: options,
+  options: local_assigns.fetch(:options, {}),
   content: content,
   controller: 'essence_videos'
 ) %>
