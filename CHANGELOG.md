@@ -1,3 +1,7 @@
+## 2.3.0 (2020-07-16)
+
+- Add support for rendering essence by partial name ([tvdeyen](https://github.com/tvdeyen))
+
 ## 2.2.0 (2020-01-07)
 
 - Do not rely on options variable in essence editor files [#17](https://github.com/AlchemyCMS/alchemy-richmedia-essences/pull/17) ([tvdeyen](https://github.com/tvdeyen))
