@@ -1,9 +1,0 @@
-$('#<%= @content.dom_id %>').replaceWith('<%= j(
-  render "alchemy/essences/#{@content.essence_partial_name}_editor",
-    formats: [:html],
-    content: @content,
-    options: @options
-) %>');
-Alchemy.closeCurrentDialog();
-Alchemy.setElementDirty($('#element_<%= @content.element.id %>'));
-Alchemy.watchForDialogs($('#<%= @content.dom_id %>'));
