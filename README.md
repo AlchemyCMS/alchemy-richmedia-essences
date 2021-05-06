@@ -4,7 +4,11 @@ Adds HTML5 `EssenceAudio` and `EssenceVideo` essences to your AlchemyCMS powered
 
 ## Alchemy version
 
-This version is compatible with Alchemy v4.0 and above only.
+**This gem has been merged into Alchemy v6.**
+
+You can safely remove it from your Gemfile after upgrading to Alchemy v6.
+
+This version is compatible with Alchemy v4 and v5 only.
 
 - For Alchemy v3.x please use version 1.0.0.
 - For Alchemy v2.7.0 please use version 0.2.0.
