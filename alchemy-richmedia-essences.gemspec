@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.version       = Alchemy::Richmedia::Essences::VERSION
   gem.authors       = ["Thomas von Deyen"]
   gem.email         = ["thomas@vondeyen.com"]
-  gem.description   = %q{EssenceAudio and EssenceVideo for AlchemyCMS 4.0}
+  gem.description   = %q{EssenceAudio and EssenceVideo for AlchemyCMS 4 and 5}
   gem.summary       = %q{Adds EssenceAudio and EssenceVideo essences to your AlchemyCMS powered website.}
   gem.homepage      = "http://alchemy-cms.com"
   gem.license       = 'BSD New'
@@ -16,5 +16,5 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split($/)
   gem.require_paths = ["lib"]
 
-  gem.add_runtime_dependency 'alchemy_cms', ['>= 4.0.0.rc1']
+  gem.add_runtime_dependency 'alchemy_cms', ['>= 4.0.0.rc1', '< 6.0.0.alpha']
 end
