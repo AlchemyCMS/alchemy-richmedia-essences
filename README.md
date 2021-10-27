@@ -23,7 +23,7 @@ Also this plugin does not contain a `EssenceFlash` any more. If you need `Essenc
 Add this line to your application's Gemfile:
 
 ~~~ruby
-gem 'alchemy-richmedia-essences', github: 'AlchemyCMS/alchemy-richmedia-essences'
+gem 'alchemy-richmedia-essences', github: 'AlchemyCMS/alchemy-richmedia-essences', branch: 'main'
 ~~~
 
 And then execute:
